@@ -4,24 +4,6 @@ import axios from 'axios';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import clsx from 'clsx';
 
-const inputsList = [
-  {
-    label: 'Ваше имя',
-    placeholder: 'Как вас зовут?',
-    type: 'name',
-  },
-  {
-    label: 'Ваш номер телефона',
-    placeholder: 'Какой ваш контактный номер телефона?',
-    type: 'phone',
-  },
-  {
-    label: 'Ваше сообщение',
-    placeholder: 'Ваше сообщение',
-    type: 'message',
-  },
-];
-
 type FormFields = {
   name: string;
   phoneNumber: string;
