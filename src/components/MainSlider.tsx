@@ -1,3 +1,5 @@
+import { v4 } from 'uuid';
+
 import { sliderData } from '../data/sliderData';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -19,7 +21,7 @@ const MainSlider = () => {
         modules={[Autoplay]}
         className="mySwiper">
         {sliderData.map((slide) => (
-          <SwiperSlide className="">
+          <SwiperSlide key={v4()} className="">
             <img src={slide.img} alt="slide" className="h-[800px]" />
           </SwiperSlide>
         ))}

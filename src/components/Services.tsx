@@ -1,7 +1,10 @@
-import React from 'react';
+// Modules
+import { v4 } from 'uuid';
+// Data
+import { servicesData } from '../data/servicesData';
+// Components
 import Container from './Container';
 import SectionTitle from './ui/SectionTitle';
-import { servicesData } from '../data/servicesData';
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
@@ -18,7 +21,7 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-3 gap-[20px]">
             {servicesData.map((service) => (
-              <ServiceCard img={service.img} text={service.text} />
+              <ServiceCard key={v4()} img={service.img} text={service.text} />
             ))}
           </div>
         </div>
