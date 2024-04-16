@@ -1,15 +1,21 @@
+import { Dispatch, SetStateAction } from 'react';
+
 type PropsType = {
   label: string;
   placeholder: string;
+  value: string;
+  setValue: Dispatch<SetStateAction<string>>;
 };
 
-const Input = ({ label, placeholder }: PropsType) => {
+const Input = ({ label, placeholder, value, setValue }: PropsType) => {
   return (
     <div className="flex flex-col gap-[5px]">
       <label htmlFor="name" className="text-base leading-[140%] text-black">
         {label}
       </label>
       <input
+        value={value}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
         type="text"
         id="name"
         placeholder={placeholder}
