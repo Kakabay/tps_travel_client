@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
     "@types/uuid": "^9.0.8",
     "axios": "^1.6.8",
     "clsx": "^2.1.0",

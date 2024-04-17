@@ -1,14 +1,16 @@
+import React from 'react';
+
 type PropsType = {
-  text: string;
   disabled: boolean;
+  children: React.ReactNode;
 };
 
-const Button = ({ text, disabled }: PropsType) => {
+const Button = ({ disabled, children }: PropsType) => {
   return (
     <button
       disabled={disabled}
-      className="text-white font-semibold leading-[140%] py-[16px] px-[20px] bg-blue flex justify-center items-center rounded-full w-fit m-auto">
-      {text}
+      className="text-white font-semibold leading-[140%] py-[16px] px-[20px] bg-blue flex justify-center items-center rounded-full min-w-[135px] w-fit m-auto">
+      {children}
     </button>
   );
 };
