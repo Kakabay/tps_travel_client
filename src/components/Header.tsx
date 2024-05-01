@@ -8,7 +8,7 @@ const Header = () => {
           <div className="h-[55px]">
             <img src="/logo.svg" alt="" />
           </div>
-          <p className="text-black text-base leading-[140%]">Наш телефон: +(993 12) 45-41-11</p>
+          <p className="text-black text-base leading-[140%]">Наш телефон: +(993 12) 21-03-46</p>
         </div>
       </Container>
     </header>
